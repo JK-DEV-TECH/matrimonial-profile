@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeet Patel | Matrimonial Profile</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- PDF Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- PDF DOWNLOAD -->
+  <div class="pdf-btn">
+    <a href="jeet-Biodata.pdf" download class="btn download">
+      Download Biodata PDF
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#photos">Photos</a>
+    <a href="#education">Education</a>
+    <a href="#career">Career</a>
+    <a href="#family">Family</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- PDF CONTENT -->
+  <main id="biodata">
+
+    <!-- HERO SECTION -->
+    <section class="hero hero-split" id="home">
+
+      <div class="hero-left">
+        <img src="jeet1.jpg" alt="Profile photo of Jeet Patel" />
+      </div>
+
+      <div class="hero-right">
+        <h1>Jeet Patel</h1>
+
+        <p class="hero-meta">
+          Born on 06 June 2004 • Age:
+          <strong><span id="age"></span> years</strong>
+        </p>
+
+        <p class="hero-line">
+          Mota 12 – Kadva Patel Samaj
+        </p>
+
+        <p class="hero-sub">
+          Software Developer • Family Business Background • Ahmedabad
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn call">Contact Family</a>
+          <a href="#photos" class="btn download">View Photos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2>About Me</h2>
+
+      <p class="about-text">
+        I am a motivated, family-oriented professional blending modern tech skills with traditional values.
+        With hands-on experience in web and motion design and ongoing studies in computer applications,
+        I enjoy building elegant digital experiences and helping the family business grow.
+        I am reliable, curious, and optimistic — I value honesty, hard work and a warm sense of humour.
+        Outside work I pursue photography, travel, fitness and learning new tools.
+        Looking for a life partner who respects family, is kind, and shares a growth mindset.
+      </p>
+    </section>
+
+    <!-- PHOTOS -->
+    <section class="section photos-section" id="photos">
+      <h2>My Photos</h2>
+
+      <div class="profile-grid">
+        <div class="profile-card">
+          <img src="jeet2.jpg" alt="Jeet Patel photo" />
+        </div>
+        <div class="profile-card">
+          <img src="jeet3.jpg" alt="Jeet Patel photo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAL DETAILS -->
+    <section class="section light" id="personal">
+      <h2>Personal Details</h2>
+
+      <div class="info-grid">
+        <div><span>Height</span> 5 ft 6 in</div>
+        <div><span>Weight</span> 72 kg</div>
+        <div><span>Diet</span> Pure Vegetarian</div>
+        <div><span>Smoking / Drinking</span> No</div>
+        <div><span>Mosal</span> Detroj, Ahmedabad</div>
+        <div><span>Village</span> Shertha, Ahmedabad</div>
+        <div><span>Date of Birth</span> 06 June 2004</div>
+        <div><span>Religion / Caste</span> Hindu (Kadva Patel)</div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <h2>Education</h2>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <span class="edu-icon">🎓</span>
+          <h3>Motion Graphic Designing</h3>
+          <p>Completed</p>
+        </div>
+
+        <div class="edu-card">
+          <span class="edu-icon">📈</span>
+          <h3>Digital Marketing</h3>
+          <p>Completed</p>
+        </div>
+
+        <div class="edu-card">
+          <span class="edu-icon">💻</span>
+          <h3>Bachelor of Computer Application</h3>
+          <p>Pursuing</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER -->
+    <section class="section light" id="career">
+      <h2>Professional Details</h2>
+
+      <div class="career-box">
+        <p class="career-title">
+          Software Developer – @Kwick Web Solution Pvt. Ltd.
+        </p>
+        <p class="career-plan">
+          Future Plan: Taking forward family business
+        </p>
+      </div>
+    </section>
+
+    <!-- FAMILY -->
+    <section class="section" id="family">
+      <h2>Family Details</h2>
+
+      <p class="family-summary">
+        Total Family Members: 5 (Father, Mother, Me, Brother, Grandmother)
+      </p>
+
+      <div class="family-head">
+        <img src="father1.jpg" alt="Kamleshbhai Keshavlal Patel" />
+        <h3>Kamleshbhai Keshavlal Patel</h3>
+        <p class="relation">Father • Businessman</p>
+
+        <ul class="family-business">
+          <li>Kwick Travels</li>
+          <li>Shree Marutinandan Travels</li>
+          <li>Kwick Web Solution Pvt. Ltd. (BhadeGadi Application)</li>
+        </ul>
+      </div>
+
+      <div class="profile-grid family-grid">
+        <div class="profile-card">
+          <img src="mother.jpg" alt="Mother" />
+          <h3>Krupaben Kamleshbhai Patel</h3>
+          <p>Mother • Homemaker</p>
+        </div>
+
+        <div class="profile-card">
+          <img src="brother.jpg" alt="Brother" />
+          <h3>Meet Patel</h3>
+          <p>Younger Brother • Student</p>
+        </div>
+
+        <div class="profile-card">
+          <img src="grandmother.jpg" alt="Grandmother" />
+          <h3>Kantaben Patel</h3>
+          <p>Respected Elder of the Family</p>
+        </div>
+      </div>
+
+      <div class="family-values">
+        <h4>Family Values</h4>
+        <p>
+          We believe in simplicity, mutual respect, strong family bonds and ethical living.
+          Our family values honesty and long-term relationships.
+        </p>
+      </div>
+    </section>
+
+    <!-- PARENTS MESSAGE -->
+    <div class="parents-blessing">
+      <h3>🧿 Message from Parents</h3>
+      <p>
+        We have raised our son with strong moral values, discipline and respect for relationships.
+        We look forward to welcoming a loving, understanding and respectful daughter into our family.
+      </p>
+    </div>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2>Contact Details</h2>
+
+      <p>
+        <strong>Father:</strong> +91 93745 99599 <br>
+        <strong>Mother:</strong> +91 98984 48796 <br>
+        <strong>My Mobile:</strong> +91 98250 35922
+      </p>
+      <div class="contact-buttons">
+        <a href="tel:+919374599599" class="btn call">Call Father</a>
+        <a href="https://wa.me/919374599599" class="btn whatsapp">WhatsApp Father</a>
+      </div>
+    </section>
+
+      <section class="section" id="Home Address">
+      <h2>Home Address</h2>
+      <p>
+        302, Khyati Residency, New C.G Road, Chandkheda, Ahmedabad – 382424 <br>
+        503, Sculpture Duplex , Ognaj Circle SP Ring Road, Ognaj Ahmedabad - 380060 <br>
+      </p>
+
+    </section>
+    <section class="section" id="Office Address">
+      <h2>Office Address</h2>
+      <p>
+        503, Tryksha Desire, N/R Kritidham Tirth Temple, Chandkheda Ahmedabad - 382424 <br>
+        504, Tryksha Desire, N/R Kritidham Tirth Temple, Chandkheda Ahmedabad - 382424 <br>
+      </p>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Jeet Patel</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

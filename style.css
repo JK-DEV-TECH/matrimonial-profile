@@ -1,0 +1,609 @@
+/* ===============================
+   ROOT THEME
+================================ */
+:root{
+  --gold:#c9a45c;
+  --dark:#3a2a1a;
+  --soft:#fbf7f2;
+  --card:#f7f2ea;
+  --white:#ffffff;
+  --green:#25d366;
+  --red:#8b0000;
+}
+
+/* ===============================
+   RESET
+================================ */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--soft);
+  color:#333;
+  line-height:1.7;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(58,42,26,0.95);
+  display:flex;
+  justify-content:center;
+  gap:26px;
+  padding:14px;
+  z-index:1000;
+}
+
+.navbar a{
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:0.4px;
+}
+
+.navbar a:hover{
+  text-decoration:underline;
+}
+
+
+/* ===============================
+   PDF BUTTON
+================================ */
+.pdf-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index:1001;
+}
+
+.pdf-btn button{
+  background:var(--gold);
+  color:#fff;
+  border:none;
+  padding:10px 18px;
+  border-radius:25px;
+  cursor:pointer;
+  font-size:14px;
+}
+
+/* ===============================
+   HERO SPLIT
+================================ */
+.hero-split{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  background:linear-gradient(to right,#3a2a1a,#4a3523);
+  color:#fff;
+  padding-top:70px;
+}
+
+.hero-left,
+.hero-right{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:50px;
+}
+
+.hero-left img{
+  width:150%;
+  max-width:400px;
+  border-radius:30px;
+  border:6px solid var(--gold);
+  box-shadow:0 25px 50px rgba(0,0,0,0.35);
+}
+
+.hero-right{
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.hero-right h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:4rem;
+  margin-bottom:10px;
+}
+
+.hero-meta{
+  font-size:0.95rem;
+  opacity:0.9;
+  margin-bottom:18px;
+}
+
+.hero-line{
+  font-size:1.05rem;
+  margin-bottom:10px;
+  opacity:0.9;
+}
+
+.hero-sub{
+  font-size:0.95rem;
+  margin-bottom:20px;
+  opacity:0.85;
+}
+
+.hero-points{
+  list-style:none;
+  margin-bottom:30px;
+}
+
+.hero-points li{
+  margin-bottom:8px;
+  padding-left:18px;
+  position:relative;
+}
+
+.hero-points li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  color:var(--gold);
+  font-weight:bold;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:16px;
+}
+
+.btn{
+  padding:12px 26px;
+  border-radius:30px;
+  text-decoration:none;
+  color:#fff;
+  font-size:0.95rem;
+}
+
+.call{ background:var(--red); }
+.whatsapp{ background:var(--green); }
+.download{ background:var(--gold); }
+
+/* ===============================
+   SECTIONS
+================================ */
+.section{
+  padding:50px 14%;
+}
+
+.light{
+  background:var(--white);
+}
+
+.section h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.6rem;
+  color:var(--dark);
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.section p{
+  max-width:900px;
+  margin:0 auto 18px auto;
+  text-align:center;
+}
+
+/* ===============================
+   INFO GRID (PERSONAL)
+================================ */
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.info-grid div{
+  background:var(--card);
+  padding:22px;
+  border-radius:18px;
+  text-align:center;
+}
+
+.info-grid span{
+  display:block;
+  font-size:0.8rem;
+  color:#777;
+  margin-bottom:6px;
+}
+
+/* ===============================
+   EDUCATION
+================================ */
+.edu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+  margin-top:40px;
+}
+
+.edu-card{
+  background:var(--card);
+  padding:35px 25px;
+  border-radius:22px;
+  text-align:center;
+}
+
+.edu-icon{
+  font-size:2rem;
+  margin-bottom:12px;
+}
+
+.edu-card h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.3rem;
+  color:var(--dark);
+}
+
+.edu-card p{
+  font-size:0.9rem;
+  opacity:0.8;
+}
+
+/* ===============================
+   CAREER
+================================ */
+.career-box{
+  max-width:700px;
+  margin:40px auto 0 auto;
+  background:linear-gradient(to right,#fff7e6,#fff);
+  padding:40px 30px;
+  border-radius:26px;
+  text-align:center;
+}
+
+/* ===============================
+   FAMILY
+================================ */
+.family-summary{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:0.95rem;
+}
+
+.family-head{
+  max-width:720px;
+  margin:0 auto 60px auto;
+  background:var(--card);
+  padding:45px 30px;
+  border-radius:30px;
+  text-align:center;
+}
+
+.family-head img{
+  width:250px;
+  height:250px;
+  object-fit:cover;
+  border-radius:16%;
+  border:5px solid var(--gold);
+  margin-bottom:18px;
+}
+
+.family-head h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.8rem;
+  color:var(--dark);
+}
+
+.family-business{
+  list-style:none;
+  margin:20px auto;
+  max-width:420px;
+}
+
+.family-business li{
+  margin-bottom:6px;
+}
+
+.family-values{
+  margin-top:30px;
+  padding-top:22px;
+  border-top:1px solid rgba(0,0,0,0.08);
+  text-align:center;
+}
+
+.family-values h4{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.35rem;
+  margin-bottom:10px;
+}
+
+.family-values p{
+  max-width:520px;
+  margin:0 auto;
+  font-size:0.95rem;
+}
+
+.profile-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:35px;
+  margin-top:40px;
+}
+
+.profile-card{
+  background:var(--card);
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+}
+
+.profile-card img{
+  width:130px;
+  height:200px;
+  border-radius:16%;
+  border:2px solid var(--gold);
+  object-fit:cover;
+  margin-bottom:12px;
+}
+
+/* ===============================
+   PARENTS BLESSING
+================================ */
+.parents-blessing{
+  margin:70px auto 0 auto;
+  max-width:800px;
+  background:linear-gradient(to right,#fff7e6,#fff);
+  padding:45px 35px;
+  border-radius:30px;
+  text-align:center;
+}
+
+.parents-blessing h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.9rem;
+  margin-bottom:18px;
+}
+
+.parents-blessing p{
+  font-style:italic;
+  font-size:1.05rem;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer{
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:28px;
+  font-size:0.9rem;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media(max-width:900px){
+  .hero-split{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .hero-right{
+    align-items:center;
+  }
+  .hero-right h1{
+    font-size:3rem;
+  }
+  .section{
+    padding:70px 8%;
+  }
+}
+/* ===============================
+   CONTACT SECTION FIX
+================================ */
+#contact{
+  text-align:center;
+}
+
+#contact p{
+  max-width:900px;
+  margin:0 auto 25px auto;
+}
+
+.contact-buttons{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:18px;
+  margin-top:30px;
+}
+/* GLOBAL SMOOTHNESS */
+a, button, .btn,
+.info-grid div,
+.edu-card,
+.profile-card,
+.family-head,
+.career-box,
+.parents-blessing {
+  transition: all 0.35s ease;
+}
+/* CARD HOVER EFFECT */
+.info-grid div:hover,
+.edu-card:hover,
+.profile-card:hover,
+.family-head:hover,
+.career-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+.edu-card:hover .edu-icon{
+  transform: scale(1.15);
+}
+/* BUTTON HOVER */
+.btn:hover,
+.language-toggle button:hover,
+.pdf-btn button:hover{
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+/* PDF BUTTON SHADOW */
+.pdf-btn button{
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+/* ===============================
+   PDF MODE (CRITICAL FIX)
+================================ */
+.pdf-mode *{
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+}
+
+/* Hide fixed elements in PDF */
+.pdf-mode .navbar,
+.pdf-mode .language-toggle,
+.pdf-mode .pdf-btn{
+  display:none !important;
+}
+
+/* Avoid gradient backgrounds in PDF */
+.pdf-mode .hero-split{
+  background:#ffffff !important;
+  color:#000 !important;
+}
+
+/* Prevent blank pages */
+.pdf-mode{
+  overflow: visible !important;
+}
+/* ===============================
+   PHOTOS SECTION – RECTANGLE IMAGES
+================================ */
+.photos-section .profile-card img{
+  border-radius:16px;   /* square = 0, soft rectangle = 12–18px */
+  width:75%;
+  height:450px;
+  object-fit:cover;
+}
+/* ===============================
+   PDF IMAGE AUTO RESIZE FIX
+================================ */
+.pdf-mode img{
+  max-width:100% !important;
+  height:auto !important;
+  object-fit:contain !important;
+}
+
+/* Photos section PDF fix */
+.pdf-mode .photos-section .profile-card img{
+  width:100% !important;
+  height:220px !important;
+  object-fit:cover !important;
+  border-radius:8px !important;
+}
+
+/* Hero image PDF fix */
+.pdf-mode .hero-left img{
+  width:260px !important;
+  height:auto !important;
+}
+/* ===============================
+   PDF PAGE BREAK CONTROL
+================================ */
+
+/* Force new page before section */
+.pdf-mode .page-break{
+  page-break-before: always;
+  break-before: page;
+}
+
+/* Prevent breaking inside important blocks */
+.pdf-mode .profile-card,
+.pdf-mode .family-head,
+.pdf-mode .career-box,
+.pdf-mode .edu-card,
+.pdf-mode .parents-blessing,
+.pdf-mode .info-grid div{
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Avoid image splitting */
+.pdf-mode img{
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE FIX
+================================ */
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 70px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .language-toggle {
+    position: static;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .hero-split {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 15px;
+    min-height: auto;
+  }
+
+  .hero-left img {
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+
+  .hero-right h1 {
+    font-size: 34px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .info-grid,
+  .profile-grid,
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+  
+}
+
+/* END OF CSS FILE */
